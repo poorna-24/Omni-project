@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /*font-size:10px; 
+  10px/16px =0.625px= 62.5% */
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Rubik' sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+.logo{
+  height: 2.4rem;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fae5d3;
+  height: 9.6rem;
+padding: 0 4.8rem;
+}
+.section-hero {
+  background-color: #fae5d3;
+  padding: 9.6rem 0;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.hero-primary {
+  font-size: 5.2rem;
+  font-weight: 400;
+  line-height: 1.05;
+  color: #333;
+  margin-bottom: 3.2rem;
+  letter-spacing: -0.5px;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 9px;
+  font-weight: 600;
+  /* put transition on orginal "state" */
+  transition: background-color 0.3s ;
+}
+.btn--full:link,.btn--full:visited{
+  background-color: #e67e22;
+  color: #fff;
+  /* margin-right: 1.5rem; */
+}
+.btn--outline:link, .btn--outline:visited{
+  background-color: #fff;
+  color: #555;
+}
+.btn--full:hover,.btn--full:active{
+  background-color: #cf711f;
+ 
+}
+.btn--outline:hover, .btn--outline:active{
+  background-color: #fdf2e9;
+  /* border: 3px solid #fff; */
+  box-shadow:inset 0 0 0 3px #fff;
+}
+
+.hero-image {
+  width: 100%;
+}
+.margin-right-sm{
+  margin-right: 1.64rem !important;
+}
+.delivered-meals{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+.delivered-faces{
+  display: flex;
+}
+.delivered-faces img{
+  height: 4.8rem;
+  width: 4.8em;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fae5d3;
+}
+.delivered-faces img:last-child{
+  margin: 0;
+}
+.delivered-text{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.delivered-text spam{
+  color: #e67e22;
+  font-weight: 700;
+}
